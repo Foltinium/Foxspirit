@@ -1,0 +1,13 @@
+name: Foxspirit
+version: '1.0'
+
+main: me.jakesvell.foxsp.foxspirit.FoxSpirit
+api-version: '1.21'
+permissions:
+  bending.fox:
+    default: true
+    description: Grants access to all Fox abilities.
+    children:
+      bending.command.add.fox: true
+      bending.command.choose.fox: true
+      bending.ability.Pounce: true
