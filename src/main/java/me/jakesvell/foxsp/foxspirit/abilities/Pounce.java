@@ -1,14 +1,12 @@
 package me.jakesvell.foxsp.foxspirit.abilities;
 
-import com.projectkorra.projectkorra.ProjectKorra;
 import com.projectkorra.projectkorra.ability.AddonAbility;
-import me.jakesvell.foxsp.foxspirit.ablistener;
-import me.jakesvell.foxsp.foxspirit.foxAbility;
+import me.jakesvell.foxsp.foxspirit.FoxAbility;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-public class Pounce extends foxAbility implements AddonAbility {
+public class Pounce extends FoxAbility implements AddonAbility {
     public Pounce(Player player) {
         super(player);
         if (!this.bPlayer.canBend(this)) {
@@ -17,24 +15,28 @@ public class Pounce extends foxAbility implements AddonAbility {
         this.setFields();
         this.start();
     }
+
     private long cooldown;
     private double forward;
     private double height;
-    private void setFields(){ // Значенія
+
+    private void setFields() { // Значенія
         this.cooldown = 5000;
-        this.height = 5;
+        this.height = 5; // Уменьшить и вынести в config
         this.forward = 3;
     }
+
     @Override
     public void progress() {
-        if (!player.isOnline() || player.isDead()){
+        if (!player.isOnline() || player.isDead()) {
             remove();
             return;
         }
         jump();
         remove();
     }
-    private void jump(){
+
+    private void jump() {
         Vector direction = player.getEyeLocation().getDirection().multiply(forward); // Вектор направленія двіженія
         direction.setY(height); // задаётся вертікальная скорость
         player.setVelocity(direction);
@@ -78,7 +80,7 @@ public class Pounce extends foxAbility implements AddonAbility {
 
     @Override
     public void load() {
-        ProjectKorra.plugin.getServer().getPluginManager().registerEvents(new ablistener(), ProjectKorra.plugin);
+
     }
 
     @Override

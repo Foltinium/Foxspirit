@@ -4,8 +4,8 @@ import com.projectkorra.projectkorra.Element;
 import com.projectkorra.projectkorra.ability.ElementalAbility;
 import org.bukkit.entity.Player;
 
-public abstract class foxAbility extends ElementalAbility {
-    public foxAbility(Player player){
+public abstract class FoxAbility extends ElementalAbility {
+    public FoxAbility(Player player){
         super(player);
     }
     @Override

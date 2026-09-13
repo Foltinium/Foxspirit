@@ -6,15 +6,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class FoxSpirit extends JavaPlugin {
     public static Element fox;
+
     @Override
     public void onEnable() {
         fox = new Element("fox");
         CoreAbility.registerPluginAbilities(this, "me.jakesvell.foxsp.foxspirit.abilities");
+        getServer().getPluginManager().registerEvents(new AblityListener(), this);
         System.out.println("Юй");
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
     }
 }
