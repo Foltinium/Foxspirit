@@ -1,8 +1,8 @@
 name: Foxspirit
 version: '${version}'
-
 main: me.jakesvell.foxsp.foxspirit.FoxSpirit
 api-version: '1.21'
+depend: [ProjectKorra]
 permissions:
   bending.fox:
     default: true
