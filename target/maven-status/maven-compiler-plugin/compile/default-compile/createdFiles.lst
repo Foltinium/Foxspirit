@@ -1,4 +1,6 @@
-me\jakesvell\foxsp\foxspirit\ablistener.class
+me\jakesvell\foxsp\foxspirit\FoxAbility.class
+me\jakesvell\foxsp\foxspirit\abilities\BerryThrow.class
+me\jakesvell\foxsp\foxspirit\abilities\Dash.class
+me\jakesvell\foxsp\foxspirit\AblityListener.class
 me\jakesvell\foxsp\foxspirit\abilities\Pounce.class
 me\jakesvell\foxsp\foxspirit\FoxSpirit.class
-me\jakesvell\foxsp\foxspirit\foxAbility.class
