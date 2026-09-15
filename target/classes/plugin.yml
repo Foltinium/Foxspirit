@@ -1,8 +1,8 @@
 name: Foxspirit
 version: '1.0'
-
 main: me.jakesvell.foxsp.foxspirit.FoxSpirit
 api-version: '1.21'
+depend: [ProjectKorra]
 permissions:
   bending.fox:
     default: true
@@ -11,3 +11,4 @@ permissions:
       bending.command.add.fox: true
       bending.command.choose.fox: true
       bending.ability.Pounce: true
+      bending.ability.BerryThrow: true
