@@ -22,7 +22,7 @@ public class BerryThrow extends FoxAbility implements AddonAbility {
     private double damage;
     private double originLocation;
     private long cooldown;
-    public BerryThrow(Player player) { // ЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙЮЙ
+    public BerryThrow(Player player) {
         super(player);
         if(!this.bPlayer.canBend(this)) return;
         this.setFields();

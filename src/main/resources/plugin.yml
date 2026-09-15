@@ -11,3 +11,4 @@ permissions:
       bending.command.add.fox: true
       bending.command.choose.fox: true
       bending.ability.Pounce: true
+      bending.ability.BerryThrow: true

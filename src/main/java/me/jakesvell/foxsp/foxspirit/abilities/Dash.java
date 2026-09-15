@@ -39,7 +39,7 @@ public class Dash extends FoxAbility implements AddonAbility {
         Vector direction = player.getEyeLocation().getDirection().multiply(forward);
         Objects.requireNonNull(location.getWorld()).spawnParticle(Particle.CLOUD, location, 20, 0.3, 1, 0.3, 0.02);
         player.setVelocity(direction);
-        bPlayer.addCooldown(this); // owvhkjsm ;tivnrfklvnreljdsn  lejsc;kelnmA:s s'denl';ksa;nv 'as 'sp
+        bPlayer.addCooldown(this);
     }
 
     @Override
